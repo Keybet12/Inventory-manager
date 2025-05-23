@@ -53,7 +53,7 @@ const Login: React.FC = () => {
         <div className="flex justify-center mb-6">
           <div className="flex items-center gap-2">
             <Box className="h-8 w-8 text-blue-500" />
-            <h1 className="text-3xl font-bold">Alex Shop</h1>
+            <h1 className="text-3xl font-bold">Product Manager</h1>
           </div>
         </div>
 

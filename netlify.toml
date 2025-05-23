@@ -1,13 +1,16 @@
-# netlify.toml
+# netlify.toml (at the repo root)
 
 [build]
-  # Netlify will use pnpm to build
-  command = "pnpm build"
-  # Publish the Vite output folder
-  publish = "dist"
+  command   = "pnpm run build"
+  publish   = "dist"
 
 [build.environment]
-  # Tell Netlify to use pnpm instead of npm
   NETLIFY_USE_PNPM = "true"
-  # (Optional) match your Node version locally
-  NODE_VERSION = "18"
+  NODE_VERSION     = "18"
+
+# === Single-Page App fallback: serve index.html for all paths ===
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+

@@ -92,7 +92,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <Box className="h-8 w-8 text-blue-500" />
-          <h1 className="text-3xl font-bold">Alex Shop</h1>
+          <h1 className="text-3xl font-bold">Product Manager</h1>
         </div>
         <div className="flex items-center gap-4">
           <ThemeToggle />
